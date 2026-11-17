@@ -4,6 +4,8 @@
 
 This is a genuine Falden evidence pack, not a mock-up. It was produced on 1 September 2026 against a real repository, the founder's own, sealed with Falden's signing key, and timestamped by an independent authority. The pack, its signature and its timestamp token are what that run produced; the key and FreeTSA's certificates are here so the checks run offline. Falden is a working prototype and this pack is not from a customer engagement.
 
+**Names in this pack.** It was sealed before the company and its repositories were renamed, so it names the original repository, its branches and the committer account as they were on 1 September 2026. Editing them would break the seal, which is the point. A newer pack will replace this one.
+
 Check it yourself. That is the entire point of publishing it.
 
 | File | What it is |

@@ -1,3 +1,3 @@
-module github.com/theruviparambil/falden-verify
+module github.com/falden-ai/falden-verify
 
 go 1.24

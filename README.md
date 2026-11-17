@@ -28,13 +28,13 @@ anything written here.
 ## Install
 
 ```
-go install github.com/theruviparambil/falden-verify@latest
+go install github.com/falden-ai/falden-verify@latest
 ```
 
 Or build from source. There are no dependencies beyond the Go standard library, so there is nothing to audit but this repository.
 
 ```
-git clone https://github.com/theruviparambil/falden-verify
+git clone https://github.com/falden-ai/falden-verify
 cd falden-verify
 go build
 ```
@@ -83,7 +83,7 @@ falden-pack-ed25519-v1\n<sha256 of pack.json, lowercase hex>\n
 
 The domain prefix is not decoration. Without it, a signature made over one kind of value could be presented as a signature over another whenever the hex happened to coincide.
 
-There is no canonicalization step. The signature covers the file as written, byte for byte, so you never have to reproduce Falden's JSON serialisation to check it.
+There is no canonicalization step. The signature covers the file as written, byte for byte, so you never have to reproduce Falden's JSON serialization to check it.
 
 **The chain.** Each link hashes its own object id together with the previous link's hash:
 

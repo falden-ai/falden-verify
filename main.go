@@ -9,7 +9,7 @@ import (
 const usage = `falden-verify: check a Falden evidence pack, offline.
 
 usage:
-  falden-verify -key falden.pub [-sig pack.sig] pack.json
+  falden-verify -key falden.pub [-sig pack.json.sig] pack.json
 
 flags:
   -key     Ed25519 public key, PEM. Published by Falden.
@@ -30,7 +30,7 @@ You do not have to run this. Every step is reproducible with stock openssl:
 
   digest=$(openssl dgst -sha256 -r pack.json | cut -d' ' -f1)
   printf 'falden-pack-ed25519-v1\n%s\n' "$digest" > message.bin
-  openssl pkeyutl -verify -pubin -inkey falden.pub -rawin -in message.bin -sigfile pack.sig
+  openssl pkeyutl -verify -pubin -inkey falden.pub -rawin -in message.bin -sigfile pack.json.sig
 
 If openssl and this program ever disagree, this program is wrong.
 
